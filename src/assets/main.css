@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Monda&display=swap");
+* {
+  font-family: "Monda", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(9, 9, 121);
+  background: linear-gradient(
+    339deg,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(0, 120, 255, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
