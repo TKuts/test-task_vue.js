@@ -6,7 +6,7 @@ import HomePage from "./components/HomePage.vue";
 export default createRouter({
   history: createWebHashHistory(),
   routes: [
-    { path: "/form", component: Form, alias: "/" },
-    { path: "/home", component: HomePage },
+    { path: "/form", name: "form", component: Form, alias: "/" },
+    { path: "/home", name: "home", component: HomePage },
   ],
 });

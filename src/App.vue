@@ -1,6 +1,4 @@
-<script setup>
-import Form from "./components/Form.vue";
-</script>
+<script setup></script>
 
 <template>
   <router-view></router-view>
