@@ -6,7 +6,7 @@ export default {
       password: "",
       errorMessage: "",
       autorization: false,
-      urlApi: "http://localhost:3001/users",
+      urlApi: "http://localhost:3001",
       user: {},
 
       rout: "",
@@ -15,12 +15,13 @@ export default {
   async mounted() {
     const respons = await fetch(this.urlApi, {
       method: "GET",
-
       headers: {
         "Content-type": "application/json; charset=UTF-8",
       },
     });
     const result = await respons.json();
+    console.log(result);
+    console.log(this.user);
     result.map((el) => (this.user = { ...el }));
   },
 
